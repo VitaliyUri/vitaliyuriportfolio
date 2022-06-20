@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a href="#" class="logo">
+                        <img src="images/icons/logo.svg" alt="OKO/VURI">
+                    </a>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="#" class="menu__link active">
+                                    Вёрстки
+                                </a>
+                            </li>
+                            <!-- <li class="menu__item">
+                                <a href="#" class="menu__link">
+                                    Отзывы
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">
+                                    Контакты
+                                </a>
+                            </li> -->
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="main">
+                <div class="container">
+                    <div class="main__inner">
+                        <h1 class="main__title visually-hidden">
+                            Верстки
+                        </h1>
+                        <div class="main__slider swiper">
+                            <div class="main__filters">
+                                <button class="main__filter" data-technology="js" title="JavaScript">
+                                    <svg viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0 0V13H13V0H0ZM7.07455 10.1388C7.07455 11.404 6.3317 11.9815 5.24933 11.9815C4.27143 11.9815 3.70558 11.4766 3.4154 10.8643L4.41071 10.2636C4.60223 10.6031 4.77634 10.8904 5.1971 10.8904C5.59754 10.8904 5.8529 10.7337 5.8529 10.1214V5.96897H7.07455V10.1388ZM9.96473 11.9815C8.83013 11.9815 8.09598 11.4417 7.73906 10.7337L8.73438 10.1592C8.99554 10.5857 9.33795 10.902 9.93862 10.902C10.4435 10.902 10.7685 10.6496 10.7685 10.2984C10.7685 9.88058 10.4377 9.73259 9.87768 9.48594L9.57299 9.35536C8.69085 8.98103 8.10759 8.50804 8.10759 7.51272C8.10759 6.59576 8.80692 5.89933 9.89509 5.89933C10.6728 5.89933 11.2299 6.1692 11.6304 6.87723L10.6786 7.48661C10.4696 7.11228 10.2433 6.96429 9.89219 6.96429C9.53527 6.96429 9.30893 7.19062 9.30893 7.48661C9.30893 7.85223 9.53527 8.00022 10.0605 8.22946L10.3652 8.36004C11.404 8.80402 11.9873 9.2596 11.9873 10.281C11.9873 11.3779 11.1225 11.9815 9.96473 11.9815Z"
+                                            fill="#FF1493" />
+                                    </svg>
+                                </button>
+                                <button class="main__filter" data-technology="anim" title="CSS анимации">
+                                    <svg viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11 0L10.0016 10.8L5.5 12L0.998379 10.8L0 0H11ZM2.47812 6.85714L2.66977 8.94L5.5 9.70714L8.32131 8.95714L8.9453 2.20714H2.04579L2.17058 3.53143H7.43436L7.30956 4.89H2.29538L2.41572 6.21429H7.19368L7.03323 7.92857L5.5 8.33143L3.96232 7.93286L3.85981 6.85714H2.47812Z"
+                                            fill="#FF1493" />
+                                    </svg>
+                                </button>
+                                <button class="main__filter" data-technology="swiper" title="Слайдер">
+                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M6.5 0C2.91015 0 0 2.91015 0 6.5C0 10.0899 2.91015 13 6.5 13C10.0899 13 13 10.0899 13 6.5C13 2.91015 10.0899 0 6.5 0ZM4.84321 9.791C5.37121 9.97433 5.92121 10.066 6.49321 10.066C7.12388 10.066 7.65554 9.97433 8.08821 9.791C8.52088 9.60033 8.83988 9.34733 9.04521 9.032C9.25788 8.70933 9.36421 8.35367 9.36421 7.965C9.36421 7.49567 9.24321 7.12533 9.00121 6.854C8.75921 6.57533 8.46221 6.37 8.11021 6.238C7.76554 6.09867 7.31088 5.95933 6.74621 5.82C6.26954 5.70267 5.88821 5.59633 5.60221 5.501C5.32354 5.39833 5.08888 5.25533 4.89821 5.072C4.71488 4.88133 4.62321 4.632 4.62321 4.324C4.62321 3.91333 4.79188 3.57967 5.12921 3.323C5.47388 3.059 5.98354 2.927 6.65821 2.927C7.01021 2.927 7.36954 2.982 7.73621 3.092C8.10288 3.19467 8.44754 3.35233 8.77021 3.565L9.04521 2.916C8.73721 2.70333 8.37054 2.53833 7.94521 2.421C7.52721 2.29633 7.09821 2.234 6.65821 2.234C6.02754 2.234 5.49954 2.32933 5.07421 2.52C4.64888 2.71067 4.33354 2.96733 4.12821 3.29C3.92288 3.60533 3.82021 3.95733 3.82021 4.346C3.82021 4.82267 3.94121 5.20033 4.18321 5.479C4.43254 5.75767 4.72954 5.96667 5.07421 6.106C5.41888 6.238 5.88088 6.37733 6.46021 6.524C6.94421 6.64133 7.32188 6.75133 7.59321 6.854C7.86454 6.94933 8.09188 7.08867 8.27521 7.272C8.46588 7.45533 8.56121 7.701 8.56121 8.009C8.56121 8.41233 8.38888 8.74233 8.04421 8.999C7.69954 9.24833 7.18254 9.373 6.49321 9.373C6.00188 9.373 5.52521 9.28867 5.06321 9.12C4.60121 8.944 4.23088 8.71667 3.95221 8.438L3.63321 9.065C3.91921 9.36567 4.32254 9.60767 4.84321 9.791Z"
+                                            fill="#FF1493" />
+                                    </svg>
+                                </button>
+                                <button class="main__filter" data-technology="modals" title="Модальные окна">
+                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.5 3.25C4.42051 3.25 2.80059 4.48906 0.8125 6.5C2.52383 8.21895 3.96094 9.75 6.5 9.75C9.03652 9.75 10.9027 7.81016 12.1875 6.53555C10.8723 5.04258 9.00859 3.25 6.5 3.25ZM6.5 8.81816C5.2457 8.81816 4.225 7.77715 4.225 6.5C4.225 5.22031 5.2457 4.18184 6.5 4.18184C7.7543 4.18184 8.775 5.22285 8.775 6.5C8.775 7.77969 7.7543 8.81816 6.5 8.81816Z"
+                                            fill="#FF1493" />
+                                        <path
+                                            d="M6.4998 5.6873C6.4998 5.48672 6.57344 5.30391 6.69277 5.16172C6.6293 5.15156 6.56582 5.14648 6.4998 5.14648C5.76855 5.14648 5.17188 5.75332 5.17188 6.4998C5.17188 7.24629 5.76855 7.85313 6.4998 7.85313C7.23106 7.85313 7.82773 7.24629 7.82773 6.4998C7.82773 6.44141 7.82266 6.38301 7.81758 6.32461C7.67793 6.43379 7.50527 6.4998 7.31484 6.4998C6.86289 6.4998 6.4998 6.13672 6.4998 5.6873Z"
+                                            fill="#FF1493" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="swiper-wrapper">
+                                <!-- <div class="main__slide swiper-slide bg" style="background-image: url(images/layouts-thumbs/addphoto.png);">
+                                    <div class="main__slide-controls">
+                                        <a data-fancybox 
+                                            data-type="iframe" 
+                                            href="https://vitaliyuri.github.io/addphoto/" 
+                                            data-width="1920"
+                                            data-height="1080"
+                                            class="main__slide-control" 
+                                            title="Посмотреть вёрстку">
+                                            <img src="images/icons/view-icon.svg" alt="View" class="main__slide-control-icon">
+                                        </a>
+                                        <a data-fancybox href="images/layouts-fulls/addphoto.png" 
+                                            class="main__slide-control" 
+                                            title="Увеличить изображение">
+                                            <img src="images/icons/fullscreen-icon.svg" alt="View" class="main__slide-control-icon">
+                                        </a>
+                                    </div>
+                                    <div class="main__slide-info">
+                                        <h3 class="main__slide-title">
+                                            <a class="main__slide-link" target="_blank" href="https://vitaliyuri.github.io/addphoto/">
+                                                ADD PHOTO
+                                            </a>
+                                        </h3>
+                                        <ul class="main__slide-technologies">
+                                            <li class="main__slide-technology main__slide-technology--js">
+                                                JavaScript
+                                            </li>
+                                            <li class="main__slide-technology main__slide-technology--css-anim">
+                                                Css анимации
+                                            </li>
+                                            <li class="main__slide-technology main__slide-technology--swiper">
+                                                Swiper
+                                            </li>
+                                            <li class="main__slide-technology main__slide-technology--modals">
+                                                Модальные окна
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div> -->
+                                <div class="main__slide swiper-slide bg" style="background-image: url(images/layouts-thumbs/addphoto.png);">
+                                    <div class="main__slide-controls">
+                                        <a data-fancybox 
+                                            data-type="iframe" 
+                                            href="https://vitaliyuri.github.io/addphoto/" 
+                                            data-width="1920"
+                                            data-height="1080"
+                                            class="main__slide-control" 
+                                            title="Посмотреть вёрстку">
+                                            <img src="images/icons/view-icon.svg" alt="View" class="main__slide-control-icon">
+                                        </a>
+                                        <a data-fancybox href="images/layouts-fulls/addphoto.png" 
+                                            class="main__slide-control" 
+                                            title="Увеличить изображение">
+                                            <img src="images/icons/fullscreen-icon.svg" alt="View" class="main__slide-control-icon">
+                                        </a>
+                                    </div>
+                                    <div class="main__slide-info">
+                                        <h3 class="main__slide-title">
+                                            <a class="main__slide-link" target="_blank" href="https://vitaliyuri.github.io/addphoto/">
+                                                ADD PHOTO
+                                            </a>
+                                        </h3>
+                                        <ul class="main__slide-technologies">
+                                            <li class="main__slide-technology main__slide-technology--js">
+                                                JavaScript
+                                            </li>
+                                            <li class="main__slide-technology main__slide-technology--css-anim">
+                                                Css анимации
+                                            </li>
+                                            <li class="main__slide-technology main__slide-technology--modals">
+                                                Модальные окна (Fslightbox)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="main__slide swiper-slide bg" style="background-image: url(images/layouts-thumbs/synthwave.png);">
+                                    <div class="main__slide-controls">
+                                        <a data-fancybox 
+                                            data-type="iframe" 
+                                            href="https://vitaliyuri.github.io/synthwave/" 
+                                            data-width="1920"
+                                            data-height="1080"
+                                            class="main__slide-control" 
+                                            title="Посмотреть вёрстку">
+                                            <img src="images/icons/view-icon.svg" alt="View" class="main__slide-control-icon">
+                                        </a>
+                                        <a data-fancybox href="images/layouts-fulls/synthwave.png" 
+                                            class="main__slide-control" 
+                                            title="Увеличить изображение">
+                                            <img src="images/icons/fullscreen-icon.svg" alt="View" class="main__slide-control-icon">
+                                        </a>
+                                    </div>
+                                    <div class="main__slide-info">
+                                        <h3 class="main__slide-title">
+                                            <a class="main__slide-link" target="_blank" href="https://vitaliyuri.github.io/synthwave/">
+                                                Synth Wave
+                                            </a>
+                                        </h3>
+                                        <ul class="main__slide-technologies">
+                                            <li class="main__slide-technology main__slide-technology--js">
+                                                JavaScript (Jquery)
+                                            </li>
+                                            <li class="main__slide-technology main__slide-technology--css-anim">
+                                                Css анимации
+                                            </li>
+                                            <li class="main__slide-technology main__slide-technology--swiper">
+                                                Слайдер (Slick)
+                                            </li>
+                                            <li class="main__slide-technology main__slide-technology--modals">
+                                                Модальные окна (Fancybox)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="main__slide swiper-slide bg" style="background-image: url(images/layouts-thumbs/homeguard.png);">
+                                    <div class="main__slide-controls">
+                                        <a data-fancybox 
+                                            data-type="iframe" 
+                                            href="https://vitaliyuri.github.io/homeguard/" 
+                                            data-width="1920"
+                                            data-height="1080"
+                                            class="main__slide-control" 
+                                            title="Посмотреть вёрстку">
+                                            <img src="images/icons/view-icon.svg" alt="View" class="main__slide-control-icon">
+                                        </a>
+                                        <a data-fancybox href="images/layouts-fulls/homeguard.png" 
+                                            class="main__slide-control" 
+                                            title="Увеличить изображение">
+                                            <img src="images/icons/fullscreen-icon.svg" alt="View" class="main__slide-control-icon">
+                                        </a>
+                                    </div>
+                                    <div class="main__slide-info">
+                                        <h3 class="main__slide-title">
+                                            <a class="main__slide-link" target="_blank" href="https://vitaliyuri.github.io/homeguard/">
+                                                Home Guard
+                                            </a>
+                                        </h3>
+                                        <ul class="main__slide-technologies">
+                                            <li class="main__slide-technology main__slide-technology--js">
+                                                JavaScript
+                                            </li>
+                                            <li class="main__slide-technology main__slide-technology--css-anim">
+                                                Css анимации
+                                            </li>
+                                            <li class="main__slide-technology main__slide-technology--swiper">
+                                                Слайдер
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-swiper-button-prev">
+                            <svg width="54" height="107" viewBox="0 0 54 107" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0 106.06L46.3238 59.7357L46.3262 59.7381L53.0321 53.0321L0 0V13.4119L39.6179 53.0298L0 92.6476V106.06Z"
+                                    fill="#FF1493" />
+                            </svg>
+                        </div>
+                        <div class="main-swiper-button-next">
+                            <svg width="54" height="107" viewBox="0 0 54 107" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0 106.06L46.3238 59.7357L46.3262 59.7381L53.0321 53.0321L0 0V13.4119L39.6179 53.0298L0 92.6476V106.06Z"
+                                    fill="#FF1493" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+
+        </footer>
+    </div>
+
+    <script src="js/main.min.js"></script>
+</body>
+</html>
